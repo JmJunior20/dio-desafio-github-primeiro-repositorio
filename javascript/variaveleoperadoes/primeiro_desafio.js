@@ -5,4 +5,11 @@ Você terá 3 variáveis. Sendo elas:
  2 - Gasto médio de combustível do carro por KM;
  3 - Distância em KM da viagem;
  */
+const precoCombustivel = 5.79;
+const kmPorLitros = 12;
+const distanciaDaViagemEmKm = 180;
 
+const litrosConsumidos = distanciaDaViagemEmKm / kmPorLitros;
+const valorViagem = litrosConsumidos * precoCombustivel;
+
+console.log(valorViagem.toFixed(2));
